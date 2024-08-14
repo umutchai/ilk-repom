@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tarih görmek için tıklayın</h2>
+    <!-- id değeri "tarihGosterge" olarak değiştirildi -->
+    <button id="tarihGosterge">Tarihi göster</button>
+    <p id="tarih"></p>
+
+    <script type="text/javascript">
+        // "tarihgösterge" olan id değeri "tarihGosterge" olarak değiştirildi
+        document.getElementById("tarihGosterge").onclick = tarihGoster;
+        
+        function tarihGoster(){
+            document.getElementById("tarih").innerHTML = Date();
+        }
+    </script>
+</body>
+</html>
